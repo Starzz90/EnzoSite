@@ -252,7 +252,6 @@ b {
   background: var(--secondary-color);
   color: var(--background-color);
   font-weight: bold;
-  animation: pulse 1s  infinite;
   border-color: var(--secondary-color);
   border-width: 5px;
 }
@@ -703,6 +702,10 @@ li {
   justify-content: center;
   color: var(--background-color);
   font-size: 15px;
+}
+.top-nav-icon{
+  display: grid;
+  place-content: center;
 }
 
 
