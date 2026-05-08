@@ -131,7 +131,9 @@ a:visited {
 }
 .only-button {
   margin-top: 10px;
-  max-width: 100000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .achievements-section {
   border-radius: 15px;
@@ -246,9 +248,9 @@ b {
   background: var(--secondary-color);
   color: var(--background-color);
   font-weight: bold;
-  transform: scale(1.05);
+  transform: scale(1.000001);
   transition: transform 0.3s;
-  animation: pulse 0.6s ease-in-out infinite;
+  animation: pulse 1s  infinite;
   border-color: var(--secondary-color);
   border-width: 5px;
 }
@@ -464,13 +466,14 @@ li {
   }
 }
 .Division {
+  display: grid;
   display: flex;
   flex: 1;
   padding: 10px;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
 }
 .shadow {
   /* no animation defined; keeping as placeholder */
