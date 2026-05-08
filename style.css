@@ -6,11 +6,11 @@
   --accent-color: #9b49ff;
   --border: #c9e8ff;
   --small: #717c85;
-  --accent2-color: #b171ff;
+  --accent2-color: #9043e8;
   --under-number: #cde9ff;
-  --gold: #9668f9;
+  --gold: #a285e2;
   --silver: #ddd4ff;
-  --bronze: #4c3fc3;
+  --bronze: #6a659c;
 }
 
 html {
@@ -80,6 +80,9 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
+h2{
+  letter-spacing: 8px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -137,9 +140,9 @@ a:visited {
 }
 .achievements-section {
   border-radius: 15px;
-  border: 2px solid rgba(255, 149, 1, 0.4);
-  animation: glowSection 2.6s ease-in-out infinite;
-  box-shadow: 0 0 0 rgba(109, 54, 0, 0.5);
+  border: 2px solid rgba(0, 208, 223, 0.4);
+  animation: glowSection 5s  infinite;
+  box-shadow: 0 0 0 rgba(175, 232, 255, 0.5);
   padding: 5px;
   margin-bottom: 18px;
   margin-top: 15px;
