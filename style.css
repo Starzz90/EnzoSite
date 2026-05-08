@@ -276,16 +276,16 @@ b {
   100% {
     transform: scale(1);
     box-shadow:
-      0 0 10px rgba(152, 86, 0, 0.4),
-      0 0 20px rgba(255, 115, 0, 0.35),
-      0 0 30px rgba(255, 157, 0, 0.25);
+      0 0 10px rgba(13, 0, 152, 0.4),
+      0 0 20px rgba(0, 170, 255, 0.35),
+      0 0 30px rgba(0, 217, 255, 0.25);
   }
   50% {
     transform: scale(1.02);
     box-shadow:
       0 0 16px rgba(255, 255, 255, 0.8),
-      0 0 30px rgba(255, 145, 0, 0.65),
-      0 0 45px rgba(255, 140, 0, 0.45);
+      0 0 30px rgba(120, 118, 255, 0.65),
+      0 0 45px rgba(160, 163, 255, 0.45);
   }
 }
 .TOP {
@@ -596,7 +596,7 @@ li {
 }
 .sidebar {
   background-color: var(--background-color);
-  border: 1px solid var(--border) 0.3s ease;
+  border-right: 1px solid var(--border);
   padding: 10px;
   width: 150px;
   position: fixed;
@@ -658,8 +658,7 @@ li {
   margin: 10px 5px 0px;
   width: 1500px;
   height: 30px;
-  border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -669,7 +668,7 @@ li {
 }
 .stats-container:hover{
   animation: glow 3s infinite;
-  box-shadow: 0 0 10px rgba(255, 149, 1, 0.4);
+  box-shadow: 0 0 10px rgba(170, 149, 255, 0.4);
 }
 .stats-gold{
   background-color: var(--gold);
