@@ -180,8 +180,8 @@ const phrases = [
   "Junior.Developer. | 17.years.old",
   "National.Olympiad.Medalist",
   "Web.Developer",
-  "Resilience over Talent",
-  "Tech Enthusiast",
+  "Resilience.Over.Talent",
+  "Tech.Enthusiast",
 ];
 
 const TYPING_SPEED = 60;
