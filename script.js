@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const phrases = [
-  "17 year old Junior.Programmer",
+  "Junior.Developer. | 17.years.old",
   "National.Olympiad.Medalist",
   "Web.Developer",
   "Resilience over Talent",
