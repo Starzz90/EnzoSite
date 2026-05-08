@@ -8,9 +8,9 @@
   --small: #717c85;
   --accent2-color: #9043e8;
   --under-number: #cde9ff;
-  --gold: #a285e2;
+  --gold: #9668f9;
   --silver: #ddd4ff;
-  --bronze: #6a659c;
+  --bronze: #4c3fc3;
 }
 
 html {
@@ -27,6 +27,7 @@ body {
   text-align: center;
   animation: fadeIn 1s ease-in-out;
   -webkit-animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden;
 }
 .top-nav {
   position: fixed;
