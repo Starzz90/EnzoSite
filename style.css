@@ -1,16 +1,16 @@
 :root {
-  --primary-color: #a67d43;
-  --secondary-color: #d9a55b;
-  --background-color: #070707;
-  --text-color: white;
-  --accent-color: #ad0013;
-  --border: rgb(152, 121, 74);
+  --primary-color: #b9f0d7;
+  --secondary-color: #b8baff;
+  --background-color: #0c0c16;
+  --text-color: #6666ff;
+  --accent-color: #9b49ff;
+  --border: #c9e8ff;
   --small: #797979;
-  --accent2-color: #cb0018;
-  --under-number: #ffae2b;
-  --gold: #ffbc04;
-  --silver: #959595;
-  --bronze: #994f00;
+  --accent2-color: #9b49ff;
+  --under-number: #c9e8ff;
+  --gold: #6f6dd6;
+  --silver: #ddd4ff;
+  --bronze: #4c3fc3;
 }
 
 html {
@@ -248,8 +248,6 @@ b {
   background: var(--secondary-color);
   color: var(--background-color);
   font-weight: bold;
-  transform: scale(1.000001);
-  transition: transform 0.3s;
   animation: pulse 1s  infinite;
   border-color: var(--secondary-color);
   border-width: 5px;
@@ -265,16 +263,13 @@ b {
   -webkit-animation-iteration-count: infinite;
 }
 .GOLD {
-  color: #ffd700; /* Gold color */
-  color: gold;
+  color: var(--gold);
 }
 .SILVER {
-  color: #c0c0c0; /* Silver color */
-  color: silver;
+  color: var(--silver);
 }
 .BRONZE {
-  color: #ef7a00;
-  color: bronze; /* Bronze color */
+  color: var(--bronze);
 }
 @keyframes glow {
   0%,
