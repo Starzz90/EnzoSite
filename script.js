@@ -1,3 +1,37 @@
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    const sunSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
+    const moonSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>';
+    themeToggle.innerHTML = newTheme === "dark" ? sunSvg : moonSvg;
+  }
+}
+
+function initTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const sunSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
+    const moonSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>';
+    themeToggle.innerHTML = currentTheme === "dark" ? sunSvg : moonSvg;
+  }
+}
+
 function PROJECTS() {
   window.location.href = "https://github.com/Starzz90/MINI-PROJECTS.git";
 }
@@ -17,7 +51,10 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
+
+// Initialize theme on page load and scroll to top
 window.onload = function () {
+  initTheme();
   window.scrollTo(0, 0);
 };
 function showMessage(title, text) {
@@ -59,9 +96,9 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
-function CONTACT(){
+function CONTACT() {
   window.location.href =
-  "https://www.linkedin.com/in/enzo-davidson-tjen-25b168354/";
+    "https://www.linkedin.com/in/enzo-davidson-tjen-25b168354/";
 }
 function myPYTHON() {
   showMessage(
@@ -160,14 +197,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-
   var sidebarLinks = sidebar.querySelectorAll("a");
   sidebarLinks.forEach(function (link) {
     link.addEventListener("click", function () {
       sidebar.classList.remove("visible");
     });
   });
-
 
   document.addEventListener("click", function (e) {
     if (!sidebar.contains(e.target) && e.target !== moreBtn) {
@@ -224,3 +259,7 @@ function type() {
 }
 
 document.addEventListener("DOMContentLoaded", type);
+
+function lightMode() {
+  document.getElementById("body").classList.toggle("light-mode");
+}
