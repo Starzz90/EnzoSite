@@ -12,7 +12,7 @@
   --gold: #957ccc;
   --silver: #333333;
   --bronze: #5a548e;
-  --under-text: rgba(111, 95, 160, 0.4);
+  --under-text: rgba(124, 242, 222, 0.2);
 }
 
 /* Dark Mode */
@@ -78,6 +78,22 @@ body {
   justify-content: space-between;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
   padding: 0 1rem;
+  overflow-x: auto;
+}
+.top-nav::-webkit-scrollbar {
+  height: 4px;
+  z-index:99999999999;
+}
+
+.top-nav::-webkit-scrollbar-track {
+  background: transparent;
+  z-index:99999999999;
+}
+
+.top-nav::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  z-index:99999999999;
 }
 .top-nav-left,
 .top-nav-right {
