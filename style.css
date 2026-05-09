@@ -12,7 +12,7 @@
   --gold: #957ccc;
   --silver: #333333;
   --bronze: #5a548e;
-  --under-text: rgba(124, 242, 222, 0.2);
+  --under-text: rgba(21, 57, 51, 0.5);
 }
 
 /* Dark Mode */
@@ -29,6 +29,7 @@
   --gold: #957ccc;
   --silver: #ddd4ff;
   --bronze: #5a548e;
+  --under-text: rgba(176, 166, 255, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +46,7 @@
     --gold: #957ccc;
     --silver: #ddd4ff;
     --bronze: #5a548e;
+    --under-text: rgba(124, 242, 222, 0.2);
   }
 }
 
