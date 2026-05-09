@@ -12,7 +12,7 @@
   --gold: #957ccc;
   --silver: #333333;
   --bronze: #5a548e;
-  --under-text: rgba(21, 57, 51, 0.5);
+  --under-text: rgba(134, 134, 134, 0.2);
 }
 
 /* Dark Mode */
@@ -75,7 +75,6 @@ body {
   display: flex;
   align-items: center;
   background: var(--background-color);
-  border-bottom: 1px solid var(--border);
   z-index: 10000;
   justify-content: space-between;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
@@ -781,9 +780,28 @@ li {
   transform: scale(1.3);
 }
 
-.light-mode {
-  :root {
-    --background-color: #ffffff;
-    --text-color: #333333;
-  }
+.small-hovers{
+  background-color: transparent;
+  border: 2px solid currentColor;
+  box-shadow: 0 0 5px currentColor;
+  border-radius: 20px;
+  font-size: 14px;
+  color: currentColor;
+  padding: 8px 10px;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+  background: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tools-options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
 }
