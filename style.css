@@ -744,7 +744,7 @@ li {
 .light-mode-button {
   background-color: transparent;
   color: var(--secondary-color);
-  padding: 10px 12px;
+  padding: 5px 5px;
   border-radius: 50%;
   font-weight: bold;
   border: none;
