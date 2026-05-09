@@ -343,7 +343,7 @@ b {
   align-items: center;
   gap: 12px;
   padding: 8px 0;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--under-text);
   margin: 0 4px;
 }
 .achievement-link {
