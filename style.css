@@ -797,12 +797,17 @@ li {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  overflow-x: hidden;
+  
 }
 
 .tools-options {
   display: grid;
   gap: 10px;
-  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
   margin-top: 20px;
-  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-evenly;
 }
