@@ -136,6 +136,9 @@ a:visited {
 h2 {
   letter-spacing: 8px;
 }
+h1,h2,h3{
+  scroll-margin-top: 60px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
