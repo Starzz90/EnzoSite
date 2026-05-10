@@ -65,6 +65,7 @@ body {
   animation: fadeIn 1s ease-in-out;
   -webkit-animation: fadeIn 1s ease-in-out;
   overflow-x: hidden;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.35));
 }
 .top-nav {
   position: fixed;
@@ -196,8 +197,8 @@ h1,h2,h3{
 }
 .achievements-section {
   border-radius: 15px;
-  border: 2px solid rgba(0, 208, 223, 0.4);
-  animation: glowSection 5s infinite;
+  border: 2px solid var(--border);
+  animation: glowSection 3s infinite;
   box-shadow: 0 0 0 rgba(175, 232, 255, 0.5);
   padding: 5px;
   margin-bottom: 18px;
