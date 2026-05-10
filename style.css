@@ -804,4 +804,5 @@ li {
   gap: 10px;
   grid-auto-columns: 1fr;
   margin-top: 20px;
+  overflow-x: hidden;
 }
