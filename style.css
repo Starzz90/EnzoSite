@@ -65,7 +65,7 @@ body {
   animation: fadeIn 1s ease-in-out;
   -webkit-animation: fadeIn 1s ease-in-out;
   overflow-x: hidden;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.35));
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
 }
 .top-nav {
   position: fixed;
