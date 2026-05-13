@@ -701,7 +701,7 @@ li {
   z-index: 999;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0));
+  
 }
 
 .sidebar.visible {
