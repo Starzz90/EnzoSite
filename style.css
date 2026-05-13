@@ -709,6 +709,22 @@ li {
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    text-shadow 0.2s ease;
+  text-shadow:
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color);
+  padding-top: 5px;
+  gap: 20px;
+}
+.sidebar:first-child {
+  margin-bottom: 30px;
 }
 
 .sidebar.visible {
