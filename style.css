@@ -14,7 +14,7 @@
   --bronze: #5a548e;
   --under-text: rgba(134, 134, 134, 0.2);
   --hovered: #94c4b3;
-  --border-transparent: #395362;
+  --border-transparent: #202528;
 }
 :root[data-theme="ice"] {
   --primary-color: #a9c2e7;
@@ -104,6 +104,7 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
   padding: 0 1rem;
   overflow-x: auto;
+  overflow-y: visible;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.35));
 }
 .top-nav::-webkit-scrollbar {
@@ -129,6 +130,8 @@ body {
 }
 .top-nav-right {
   justify-content: flex-end;
+  overflow: visible;
+  position: relative;
 }
 .top-nav-left {
   justify-content: flex-start;
@@ -143,7 +146,11 @@ body {
   transition:
     background 0.2s ease,
     color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    text-shadow 0.2s ease;
+  text-shadow:
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color);
 }
 .top-nav-right a:hover,
 .top-nav-right a:focus {
@@ -697,11 +704,25 @@ li {
   align-items: flex-start;
   justify-content: flex-start;
   backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 100000;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0));
+  pointer-events: auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    text-shadow 0.2s ease;
+  text-shadow:
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color);
+  gap: 20px;
+  padding-top: 30px;
 }
 
 .sidebar.visible {
