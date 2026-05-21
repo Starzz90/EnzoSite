@@ -220,6 +220,7 @@ const phrases = [
   "Junior.Developer || 17.years.old",
   "National.Olympiad.Medalist",
   "Web.Developer",
+  "95/100 GPA",
   "Resilience.Over.Talent",
   "Tech.Enthusiast",
 ];
