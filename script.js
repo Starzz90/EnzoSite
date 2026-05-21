@@ -53,7 +53,10 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
-
+function WARNING(){
+  window.location.href =
+    "WARNING.html";
+}
 // Initialize theme on page load and scroll to top
 window.onload = function () {
   initTheme();
