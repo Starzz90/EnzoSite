@@ -225,7 +225,7 @@ const phrases = [
   "Tech.Enthusiast",
 ];
 
-const TYPING_SPEED = 60;
+const TYPING_SPEED = 60;  
 const DELETING_SPEED = 30;
 const PAUSE_AFTER = 2000;
 const PAUSE_BEFORE = 500;
